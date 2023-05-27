@@ -1,61 +1,26 @@
-import { SafeAreaView } from "react-native-safe-area-context";
-import CoinOrganism from "../../organisms/CoinOrganism/CoinOrganism";
-import React, { useEffect, useState } from 'react';
-import { FlatList, TextInput } from 'react-native';
-import { fetchCoinsAll } from "../../../services/fetchCoins";
+import React, { useState } from 'react';
+import { View } from 'react-native';
+import SearchInput from '../../molecules/SearchInput/SearchInput';
+import { useCoinContext } from '../../../context/CoinContext';
+import { useFavorites } from '../../../context/FavoritesContext';
+import Coins from '../../organisms/Coins/Coins';
+
 
 export default function CoinListTemplates() {
-  const [coins, setCoins] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
+  const { coins } = useCoinContext();
+  const { favoriteCoins } = useFavorites();
 
-
-  useEffect(() => {
-    const fetchCoins = fetchCoinsAll();
-    fetchCoins.then(coins => setCoins(coins))
-  }, []);
-
-
+  const [searchQuery, setSearchQuery] = useState<string>('');
 
   const handleSearch = (text: string) => {
     setSearchQuery(text);
   };
 
-  const renderItem = ({ item }) => (
-    <CoinOrganism
-      name={item.name}
-      symbol={item.symbol.toUpperCase()}
-      price={item.current_price}
-      image={item.image}
-      id={item.id}
-    />
-
-  );
-
-
   return (
-    <SafeAreaView>
-      <TextInput
-        placeholder="Search..."
-        onChangeText={handleSearch}
-        value={searchQuery}
-      />
-      <FlatList
-        data={coins.filter(coin =>
-          coin?.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          coin?.symbol.toLowerCase().includes(searchQuery.toLowerCase())
-        )} renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-        initialNumToRender={10}
-        maxToRenderPerBatch={10}
-        updateCellsBatchingPeriod={10}
-        windowSize={50}
-        removeClippedSubviews={true}
-      />
-
-    </SafeAreaView>
+    <View>
+      <SearchInput handleSearch={handleSearch} searchQuery={searchQuery} />
+      {favoriteCoins[0] && <Coins coins={favoriteCoins} searchQuery={searchQuery} title="Favorite Coins" emptyText="You have not find any favorite coins yet" />}
+      <Coins coins={coins} searchQuery={searchQuery} title="Coins" emptyText="You have not find any coins yet" />
+    </View>
   );
 }
-
-
-
-

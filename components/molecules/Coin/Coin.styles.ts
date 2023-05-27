@@ -8,19 +8,21 @@ export default StyleSheet.create({
     width: '100%',
     borderBottomWidth: 1,
     borderBottomColor: '#f2f2f2',
+    marginBottom: 10
   },
   image: {
     width: 70,
     height: 70,
     marginRight: 10,
-    // backgroundColor: "red",
   },
   options: {
     display: "flex",
-    flex: 1,
     alignItems: "center",
     flexDirection: "row",
     justifyContent: "space-between",
+    flex: 1,
+    width: 205,
+    marginTop: 10,
   }
 
 

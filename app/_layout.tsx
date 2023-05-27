@@ -5,6 +5,9 @@ import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 import { headerOptions } from '../utils/NavigationHeaderOptions';
+import { FavoritesProvider } from '../context/FavoritesContext';
+import { CoinProvider } from '../context/CoinContext';
+import { CryptoNewsProvider } from '../context/CryptoNewsContext';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -41,23 +44,36 @@ function RootLayoutNav() {
 
   return (
     <>
-      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <Stack>
-          <Stack.Screen
-            name="(tabs)"
-            options={
-              headerOptions
-            }
-          />
-          <Stack.Screen
-            name="CoinDetail"
-            options={
-              headerOptions
-            }
-          />
+      <FavoritesProvider>
+        <CoinProvider>
+          <CryptoNewsProvider>
+            <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+              <Stack>
+                <Stack.Screen
+                  name="(tabs)"
+                  options={
+                    headerOptions
+                  }
+                />
+                <Stack.Screen
+                  name="CoinDetail"
+                  options={
+                    headerOptions
+                  }
+                />
+                <Stack.Screen
+                  name="NewsDetail"
+                  options={
+                    headerOptions
+                  }
+                />
 
-        </Stack>
-      </ThemeProvider>
+              </Stack>
+            </ThemeProvider>
+          </CryptoNewsProvider>
+        </CoinProvider>
+      </FavoritesProvider>
+
     </>
   );
 }

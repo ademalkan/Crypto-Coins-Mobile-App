@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import Loader from "../../components/organisms/Loader/Loader";
+import Loader from "../../components/atoms/Loader/Loader";
 
 const LoaderMeta = {
   title: "Loader",
@@ -16,4 +16,4 @@ const LoaderMeta = {
 
 export default LoaderMeta;
 
-export const Static = {};
+export const Default = {};
