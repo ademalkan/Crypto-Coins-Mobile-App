@@ -3,7 +3,7 @@ import { View } from "react-native";
 import AlertText from "../../../components/atoms/AlertText/AlertText";
 
 export default {
-  title: "AlertText",
+  title: "Atoms/AlertText",
   component: AlertText,
   args: {
     text: "Default Alert Text",

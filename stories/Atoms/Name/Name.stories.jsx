@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Name from "../../../components/atoms/Name/Name";
 
 export default {
-  title: "Name",
+  title: "Atoms/Name",
   component: Name,
   args: {
     name: "Name Example",

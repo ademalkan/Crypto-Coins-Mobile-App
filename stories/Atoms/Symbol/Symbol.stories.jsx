@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Symbol from "../../../components/atoms/Symbol/Symbol";
 
 export default {
-  title: "Symbol",
+  title: "Atoms/Symbol",
   component: Symbol,
   decorators: [
     (Story) => (

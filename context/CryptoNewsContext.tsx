@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { CryptoNewsI } from '../interfaces/CryptoNewsInterface';
-import { fetchCryptoNews } from '../services/fetchCryptoNews';
+import { fetchCryptoNews } from '../services/fetchCryptoNews/fetchCryptoNews';
 
 interface CryptoNewsContextValue {
   cryptoNews: CryptoNewsI[];

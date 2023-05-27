@@ -8,7 +8,7 @@ describe("Title", () => {
     let component;
 
     act(() => {
-      component = renderer.create(<title text={titleText} />);
+      component = renderer.create(<Title text={titleText} />);
     });
 
     const instance = component.root;

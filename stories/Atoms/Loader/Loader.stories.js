@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import Loader from "../../components/atoms/Loader/Loader";
+import Loader from "../../../components/atoms/Loader/Loader";
 
 const LoaderMeta = {
-  title: "Loader",
+  title: "Atoms/Loader",
   component: Loader,
   decorators: [
     (Story) => (

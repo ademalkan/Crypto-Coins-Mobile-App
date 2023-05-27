@@ -1,21 +1,13 @@
-import React, { useContext } from 'react';
-import { View, FlatList } from 'react-native';
-import { CryptoNewsContext } from '../../../context/CryptoNewsContext';
-import { CryptoNewsI } from '../../../interfaces/CryptoNewsInterface';
+import React from 'react';
+import { View } from 'react-native';
 import styles from './CoinNewsTemplates.styles';
 import News from '../../organisms/News/News';
 
 const CoinNewsTemplates: React.FC = () => {
-  const cryptoNewsContext = useContext(CryptoNewsContext);
-  const cryptoNews = cryptoNewsContext?.cryptoNews || [];
 
   return (
     <View style={styles.container}>
-      <FlatList
-        data={cryptoNews}
-        renderItem={({ item }: { item: CryptoNewsI }) => <News item={item} />}
-        keyExtractor={(item, index) => `${index}`}
-      />
+      <News />
     </View>
   );
 };

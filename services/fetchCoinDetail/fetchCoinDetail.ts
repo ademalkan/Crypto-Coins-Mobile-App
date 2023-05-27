@@ -4,6 +4,6 @@ export const fetchCoinDetail = async (coin: string) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error fetching coin detail:', error);
+    throw error;
   }
 };

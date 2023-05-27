@@ -3,7 +3,7 @@ import { View } from "react-native";
 import RangeButton from "../../../components/atoms/RangeButton/RangeButton";
 
 export default {
-  title: "RangeButton",
+  title: "Atoms/RangeButton",
   component: RangeButton,
 };
 

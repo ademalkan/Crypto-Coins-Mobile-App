@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState, useContext } from 'react';
-import { fetchCoinsAll } from '../services/fetchCoins';
-import { fetchCoinById } from '../services/fetchCoinById';
+import { fetchCoinsAll } from '../services/fetchCoins/fetchCoins';
+import { fetchCoinById } from '../services/fetchCoinById/fetchCoinById';
 import { CoinI } from '../interfaces/CoinInterface';
 
 

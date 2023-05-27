@@ -3,7 +3,7 @@ import { View } from "react-native";
 import ImageAtom from "../../../components/atoms/ImageAtom/ImageAtom";
 
 export default {
-  title: "ImageAtom",
+  title: "Atoms/ImageAtom",
   component: ImageAtom,
 };
 

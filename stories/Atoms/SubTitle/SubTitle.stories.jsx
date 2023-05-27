@@ -3,7 +3,7 @@ import { View } from "react-native";
 import SubTitle from "../../../components/atoms/SubTitle/SubTitle";
 
 export default {
-  title: "SubTitle",
+  title: "Atoms/SubTitle",
   component: SubTitle,
 };
 

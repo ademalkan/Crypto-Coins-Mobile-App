@@ -1,34 +1,19 @@
-import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import React, { useContext } from 'react';
+import { FlatList } from 'react-native';
+import { CryptoNewsContext } from '../../../context/CryptoNewsContext';
 import { CryptoNewsI } from '../../../interfaces/CryptoNewsInterface';
-import ImageAtom from '../../atoms/ImageAtom/ImageAtom';
-import styles from './News.styles';
+import New from '../../molecules/New/New';
 
-interface NewsProps {
-  item: CryptoNewsI;
-}
-
-const News: React.FC<NewsProps> = ({ item }) => {
-  const navigation = useNavigation();
-
-  const handlePress = () => {
-    navigation.navigate('NewsDetail', { news_url: item?.url });
-  };
+const News: React.FC = () => {
+  const cryptoNewsContext = useContext(CryptoNewsContext);
+  const cryptoNews = cryptoNewsContext?.cryptoNews || [];
 
   return (
-    <TouchableOpacity onPress={handlePress}>
-      <View style={styles.newsCard}>
-        <ImageAtom image={item.thumb_2x} height={200} />
-        <Text style={styles.newsTitle}>{item.title}</Text>
-        <Text style={styles.newsDescription}>
-          {item.description.length > 60
-            ? `${item.description.slice(0, 60)}...`
-            : item.description}
-        </Text>
-        <Text style={styles.newsSource}>{item.author}</Text>
-      </View>
-    </TouchableOpacity>
+    <FlatList
+      data={cryptoNews}
+      renderItem={({ item }: { item: CryptoNewsI }) => <New item={item} />}
+      keyExtractor={(item, index) => `${index}`}
+    />
   );
 };
 

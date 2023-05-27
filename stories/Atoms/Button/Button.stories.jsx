@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Button from "../../../components/atoms/Button/Button";
 
 export default {
-  title: "Button",
+  title: "Atoms/Button",
   component: Button,
   argTypes: {
     onPress: { action: "pressed the button" },

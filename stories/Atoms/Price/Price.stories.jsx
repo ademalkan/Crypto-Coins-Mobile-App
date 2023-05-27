@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Price from "../../../components/atoms/Price/Price";
 
 export default {
-  title: "Price",
+  title: "Atoms/Price",
   component: Price,
   args: {
     price: 10.99,

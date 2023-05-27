@@ -5,16 +5,16 @@ import Loader from '../../atoms/Loader/Loader';
 import { localeDateString } from '../../../utils/LocaleDateString';
 import BackButton from '../../atoms/BackButton/BackButton';
 import { CryptoNewsContext } from '../../../context/CryptoNewsContext';
-import { fetchCoinDetail } from '../../../services/fetchConDetail';
+import { fetchCoinDetail } from '../../../services/fetchCoinDetail/fetchCoinDetail';
 import { getPriceChangeDataHelper, getPriceChangeLabelHelper } from '../../../utils/helper';
 import styles from './CoinDetailTemplates.styles';
 import ImageAtom from '../../atoms/ImageAtom/ImageAtom';
-import News from '../../organisms/News/News';
 import SubTitle from '../../atoms/SubTitle/SubTitle';
 import LineChartAtom from '../../atoms/LineChartAtom/LineChartAtom';
 import ButtonGroup from '../../molecules/ButtonGroup/ButtonGroup';
 import Title from '../../atoms/Title/Title';
 import Symbol from '../../atoms/Symbol/Symbol';
+import New from '../../molecules/New/New';
 
 type RootStackParamList = {
   CoinDetail: { coin: string };
@@ -112,7 +112,7 @@ const CoinDetailTemplates: React.FC = () => {
 
         {coinNews.length > 0 && <Text style={styles.newsTitle}>Related News:</Text>}
         {coinNews.map((news: any, id: number) => (
-          <News key={id} item={news} />
+          <New key={id} item={news} />
         ))}
       </ScrollView>
     </View>

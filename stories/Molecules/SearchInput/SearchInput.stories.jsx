@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import SearchInput from "../../components/molecules/SearchInput/SearchInput";
+import SearchInput from "../../../components/molecules/SearchInput/SearchInput";
 
 export default {
-  title: "SearchInput",
+  title: "Molecules/SearchInput",
   component: SearchInput,
   args: {
     text: "SearchInput",

@@ -2685,7 +2685,7 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/addon-ondevice-actions@6.5.3":
+"@storybook/addon-ondevice-actions@^6.5.3":
   version "6.5.3"
   resolved "https://registry.npmjs.org/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.3.tgz"
   integrity sha512-kxQme4syTh7Du9MT0BGS+sJG9taPFrfnxwzqRuYPXlQavkcGM1XDpOcmfkQ+FO5EhtUJDNuClI+9ryw80oxs9A==

@@ -1,4 +1,4 @@
-import { CryptoNewsI } from "../interfaces/CryptoNewsInterface";
+import { CryptoNewsI } from "../../interfaces/CryptoNewsInterface";
 
 export const fetchCryptoNews = async () => {
   try {
@@ -7,6 +7,6 @@ export const fetchCryptoNews = async () => {
     const data: CryptoNewsI[] = responseData.data;
     return data;
   } catch (error) {
-    console.error(error);
+    throw error;
   }
 };
