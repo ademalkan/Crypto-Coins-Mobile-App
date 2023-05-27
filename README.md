@@ -1,5 +1,17 @@
 # Crypto-Coins-Mobile-App
 
+## Used Packages
+
+- Expo CLI
+- Storybook
+- Jest
+- Typescript
+- Babel
+- React Native Chart Kit
+- Expo Router
+- React Native Tabs
+- Context Api
+
 ## App Images
 
 ## Home
