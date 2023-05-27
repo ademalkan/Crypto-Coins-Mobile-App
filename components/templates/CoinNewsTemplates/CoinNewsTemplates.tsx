@@ -6,8 +6,8 @@ import styles from './CoinNewsTemplates.styles';
 import News from '../../organisms/News/News';
 
 const CoinNewsTemplates: React.FC = () => {
-  const cryptoNewsContext = useContext(CryptoNewsContext) as CryptoNewsContextValue;
-  const { cryptoNews } = cryptoNewsContext;
+  const cryptoNewsContext = useContext(CryptoNewsContext);
+  const cryptoNews = cryptoNewsContext?.cryptoNews || [];
 
   return (
     <View style={styles.container}>

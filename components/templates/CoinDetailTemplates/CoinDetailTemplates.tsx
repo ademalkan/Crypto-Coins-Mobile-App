@@ -14,6 +14,7 @@ import SubTitle from '../../atoms/SubTitle/SubTitle';
 import LineChartAtom from '../../atoms/LineChartAtom/LineChartAtom';
 import ButtonGroup from '../../molecules/ButtonGroup/ButtonGroup';
 import Title from '../../atoms/Title/Title';
+import Symbol from '../../atoms/Symbol/Symbol';
 
 type RootStackParamList = {
   CoinDetail: { coin: string };
@@ -24,7 +25,8 @@ type CoinDetailRouteProp = RouteProp<RootStackParamList, 'CoinDetail'>;
 const CoinDetailTemplates: React.FC = () => {
   const route = useRoute<CoinDetailRouteProp>();
   const { coin } = route.params;
-  const { cryptoNews } = useContext(CryptoNewsContext);
+  const cryptoNewsContext = useContext(CryptoNewsContext);
+  const cryptoNews = cryptoNewsContext?.cryptoNews || [];
 
   const [coinDetail, setCoinDetail] = useState<any>(null);
   const [timeRange, setTimeRange] = useState<'24h' | '7d' | '30d' | '1y'>('24h');
@@ -81,10 +83,12 @@ const CoinDetailTemplates: React.FC = () => {
       <ScrollView contentContainerStyle={styles.content}>
         <ImageAtom image={''} height={200} />
         <Title text={coinDetail.name} />
-        <SubTitle text={coinDetail.symbol} />
+        <Symbol symbol={coinDetail.symbol} />
         <SubTitle text={`Current Price: ${coinDetail?.market_data?.current_price?.usd}$`} />
         <SubTitle text={`Last 24 Hours Price Change: ${coinDetail?.market_data?.price_change_24h}`} />
+        <SubTitle text={`Total Volume: ${coinDetail?.market_data?.total_volume?.usd}$`} />
         <SubTitle text={`Total Supply: ${coinDetail?.market_data?.total_supply}$`} />
+        <SubTitle text={`Max Supply: ${coinDetail?.market_data?.max_supply}$`} />
         <SubTitle text={`Last Updated: ${localeDateString(coinDetail?.market_data?.last_updated)}`} />
 
         <Text style={styles.chartTitle}>Price Change {timeRange} in Currency</Text>

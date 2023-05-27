@@ -27,6 +27,8 @@ const Coins: React.FC<CoinsProps> = ({ coins, searchQuery, title = "", emptyText
       name={item.name}
       symbol={item.symbol.toUpperCase()}
       price={item.current_price ? item.current_price : item.price}
+      total_volume={item.total_volume}
+      price_change_24h={item.price_change_24h}
       image={item.image}
       id={item.id}
     />

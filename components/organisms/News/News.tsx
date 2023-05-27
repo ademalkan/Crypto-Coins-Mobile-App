@@ -13,7 +13,7 @@ const News: React.FC<NewsProps> = ({ item }) => {
   const navigation = useNavigation();
 
   const handlePress = () => {
-    navigation.navigate('NewsDetail', { news_title: item.title });
+    navigation.navigate('NewsDetail', { news_url: item?.url });
   };
 
   return (

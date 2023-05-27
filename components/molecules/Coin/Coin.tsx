@@ -11,9 +11,10 @@ import { Image } from 'expo-image';
 import { useFavorites } from '../../../context/FavoritesContext';
 import { useCoinContext } from '../../../context/CoinContext';
 import { CoinI } from '../../../interfaces/CoinInterface';
+import SubTitleWithPrice from '../../atoms/SubTitleWithPrice/SubTitleWithPrice';
 
 
-const CoinOrganism: React.FC<CoinI> = ({ name, symbol, price, image, id }) => {
+const CoinOrganism: React.FC<CoinI> = ({ name, symbol, price, image, id, total_volume, price_change_24h }) => {
   const navigation = useNavigation();
 
 
@@ -26,7 +27,7 @@ const CoinOrganism: React.FC<CoinI> = ({ name, symbol, price, image, id }) => {
   };
 
   const handleAddFavorite = () => {
-    const coin = { id, name, symbol, price, image };
+    const coin = { id, name, symbol, price, image, total_volume, price_change_24h };
 
     if (isFavorite) {
       removeFavoriteCoin(id);
@@ -53,16 +54,21 @@ const CoinOrganism: React.FC<CoinI> = ({ name, symbol, price, image, id }) => {
       <View>
         <Name name={name} />
         <Symbol symbol={symbol} />
+        <SubTitleWithPrice text="Total Volume:" price={total_volume!} />
+        <SubTitleWithPrice text="Price Change 24 Hours:" price={price_change_24h!} />
         <View style={styles.options}>
+
           <Button onPress={handlePress} text="Detail" />
           <Button
             onPress={handleAddFavorite}
             text={isFavorite ? 'Remove Favorite' : 'Add Favorite'}
           />
         </View>
+
       </View>
 
       <Price price={price} />
+
     </View>
   );
 };
