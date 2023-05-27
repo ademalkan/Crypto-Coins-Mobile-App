@@ -8,7 +8,7 @@ type PriceProps = {
 
 const Price: React.FC<PriceProps> = ({ price }) => {
   return (
-    <Text style={styles.price}>${price}</Text>
+    <Text style={styles.price}>${price?.toFixed(2)}</Text>
   );
 };
 

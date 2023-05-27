@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { TouchableOpacity, View } from 'react-native';
+import { Image, TouchableOpacity, View } from 'react-native';
 import styles from './Coin.styles';
 import Price from '../../atoms/Price/Price';
 import Symbol from '../../atoms/Symbol/Symbol';
 import Name from '../../atoms/Name/Name';
 import { useNavigation } from 'expo-router';
 import Button from '../../atoms/Button/Button';
-import { Image } from 'expo-image';
 import { useFavorites } from '../../../context/FavoritesContext';
 import { useCoinContext } from '../../../context/CoinContext';
 import { CoinI } from '../../../interfaces/CoinInterface';
 import SubTitleWithPrice from '../../atoms/SubTitleWithPrice/SubTitleWithPrice';
+import ImageAtom from '../../atoms/ImageAtom/ImageAtom';
 
 
 const CoinOrganism: React.FC<CoinI> = ({ name, symbol, price, image, id, total_volume, price_change_24h }) => {
@@ -42,13 +42,8 @@ const CoinOrganism: React.FC<CoinI> = ({ name, symbol, price, image, id, total_v
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={handlePress}>
-        <Image
-          style={styles.image}
-          source={require('./../../../assets/images/logo.png')}
-          contentFit="cover"
-          transition={1000}
-        />
+      <TouchableOpacity style={styles.image} onPress={handlePress}>
+        <ImageAtom image={image} height={100} width={80} />
       </TouchableOpacity>
 
       <View>

@@ -46,17 +46,13 @@ exports[`New should render the news item correctly 1`] = `
     }
   >
     <Image
-      source={
-        {
-          "uri": "news.png",
-        }
-      }
+      resizeMode="contain"
+      source={1}
       style={
         {
-          "borderRadius": 8,
           "height": 200,
-          "marginBottom": 8,
-          "width": "100%",
+          "padding": 6,
+          "width": 300,
         }
       }
     />

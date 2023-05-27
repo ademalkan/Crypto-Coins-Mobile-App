@@ -10,7 +10,7 @@ const SubTitleWithPrice: React.FC<SubTitleWithPriceProps> = ({ text, price }) =>
   return (
     <View style={styles.container}>
       <Text style={styles.subtitle}>{text}</Text>
-      <Text style={styles.price}>${price}</Text>
+      <Text style={styles.price}>${price?.toFixed(2)}</Text>
     </View>
   );
 };

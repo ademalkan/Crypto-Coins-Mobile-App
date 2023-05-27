@@ -11,8 +11,6 @@ export default StyleSheet.create({
     marginBottom: 10
   },
   image: {
-    width: 70,
-    height: 70,
     marginRight: 10,
   },
   options: {

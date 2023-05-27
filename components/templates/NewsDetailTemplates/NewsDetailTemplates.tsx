@@ -38,7 +38,8 @@ const NewsDetailTemplates: React.FC = () => {
     <View style={styles.container}>
       <BackButton />
       <ScrollView contentContainerStyle={styles.content}>
-        <ImageAtom image={newsDetail.thumb_2x} height={220} />
+        {/* <ImageAtom image={newsDetail.thumb_2x} width={350} height={200} /> */}
+        <ImageAtom image={""} width={350} height={200} />
         <Title text={newsDetail?.title} />
         <SubTitle text={newsDetail?.news_site} />
         <SubTitle text={newsDetail?.source} />

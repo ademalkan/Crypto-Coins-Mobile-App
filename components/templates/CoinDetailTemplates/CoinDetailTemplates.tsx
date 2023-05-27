@@ -81,14 +81,14 @@ const CoinDetailTemplates: React.FC = () => {
     <View style={styles.container}>
       <BackButton />
       <ScrollView contentContainerStyle={styles.content}>
-        <ImageAtom image={''} height={200} />
+        <ImageAtom image={coinDetail?.image.large} height={180} width={350} />
         <Title text={coinDetail.name} />
         <Symbol symbol={coinDetail.symbol} />
-        <SubTitle text={`Current Price: ${coinDetail?.market_data?.current_price?.usd}$`} />
-        <SubTitle text={`Last 24 Hours Price Change: ${coinDetail?.market_data?.price_change_24h}`} />
-        <SubTitle text={`Total Volume: ${coinDetail?.market_data?.total_volume?.usd}$`} />
-        <SubTitle text={`Total Supply: ${coinDetail?.market_data?.total_supply}$`} />
-        <SubTitle text={`Max Supply: ${coinDetail?.market_data?.max_supply}$`} />
+        <SubTitle text={`Current Price: ${coinDetail?.market_data?.current_price?.usd?.toFixed(2)}$`} />
+        <SubTitle text={`Last 24 Hours Price Change: ${coinDetail?.market_data?.price_change_24h?.toFixed(2)}`} />
+        <SubTitle text={`Total Volume: ${coinDetail?.market_data?.total_volume?.usd?.toFixed(2)}$`} />
+        <SubTitle text={`Total Supply: ${coinDetail?.market_data?.total_supply?.toFixed(2)}$`} />
+        <SubTitle text={`Max Supply: ${coinDetail?.market_data?.max_supply?.toFixed(2)}$`} />
         <SubTitle text={`Last Updated: ${localeDateString(coinDetail?.market_data?.last_updated)}`} />
 
         <Text style={styles.chartTitle}>Price Change {timeRange} in Currency</Text>

@@ -20,11 +20,12 @@ describe("ImageAtom", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should render the image with custom height when height prop is provided", () => {
+  it("should render the image with custom width and height when width and height props are provided", () => {
     const image = "https://example.com/image.jpg";
+    const width = 300;
     const height = 200;
     const component = renderer.create(
-      <ImageAtom image={image} height={height} />
+      <ImageAtom image={image} width={width} height={height} />
     );
     const tree = component.toJSON();
 

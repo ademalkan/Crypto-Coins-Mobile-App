@@ -21,7 +21,8 @@ const New: React.FC<NewProps> = ({ item }) => {
   return (
     <TouchableOpacity onPress={handlePress}>
       <View style={styles.newsCard}>
-        <ImageAtom image={item.thumb_2x} height={200} />
+        {/* <ImageAtom image={item.thumb_2x} height={200} width={300} /> */}
+        <ImageAtom image={""} height={200} width={300} />
         <Text style={styles.newsTitle}>{item.title}</Text>
         <Text style={styles.newsDescription}>
           {item.description.length > 60

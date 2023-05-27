@@ -44,40 +44,25 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       {
+        "marginRight": 10,
         "opacity": 1,
       }
     }
   >
-    <ViewManagerAdapter_ExpoImage
-      height={70}
-      marginRight={10}
-      onError={[Function]}
-      onLoad={[Function]}
-      onLoadStart={[Function]}
-      onProgress={[Function]}
-      proxiedProperties={
+    <Image
+      resizeMode="contain"
+      source={
         {
-          "contentFit": "cover",
-          "contentPosition": {
-            "left": "50%",
-            "top": "50%",
-          },
-          "placeholder": [],
-          "source": [],
-          "tintColor": undefined,
-          "transition": {
-            "duration": 1000,
-          },
+          "uri": "coin.png",
         }
       }
       style={
         {
-          "height": 70,
-          "marginRight": 10,
-          "width": 70,
+          "height": 100,
+          "padding": 6,
+          "width": 80,
         }
       }
-      width={70}
     />
   </View>
   <View>
@@ -135,7 +120,7 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
         }
       >
         $
-        1000000
+        1000000.00
       </Text>
     </View>
     <View
@@ -170,7 +155,7 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
         }
       >
         $
-        5
+        5.00
       </Text>
     </View>
     <View
@@ -300,7 +285,7 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
     }
   >
     $
-    50000
+    50000.00
   </Text>
 </View>
 `;
