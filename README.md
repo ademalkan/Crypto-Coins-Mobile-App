@@ -39,10 +39,11 @@
 
 ## Coin Detail
 
+![detail](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/922b59f0-9c95-42fb-8ef7-c811533869df)
+
+![coindetail ](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/01610d6b-364e-4430-9333-1dbf30c70ce7)
 
 ![coin detail 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/189024dc-04d2-47a7-bcd8-8fd2b3ed29b8)
-
-![coin detail 3](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/611519d6-222a-4ed9-8d93-5825e7cea3b8)
 
 ![coins detail 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/a7f290e5-65f3-4836-b6f3-0a96871b763b)
 
