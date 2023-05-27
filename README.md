@@ -16,19 +16,20 @@
 
 ## Home
 
-![index](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/2a1dcd33-4218-4a8a-9276-a3bff56b88c6)
+![home - 1](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/601dd4fe-4fb9-48c7-ab3e-05a3cf0a31d0)
 
-![add favorite](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/0c765243-ba31-49dc-a68f-07748c59b91a)
+![home 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/b094b310-9ff2-4e23-b38d-1f78eb614629)
+
 
 ## Favorites Page
 
+![favorite](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/85a6a2a5-430a-4a2a-8e44-49f3e5ad266d)
 
-![favorite coins](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/7c551730-46eb-497c-9193-a4091e3c76ad)
 
 
 ## Coin News Page
 
-![news](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/5e94da72-5671-4bd3-8c4a-4341c4abd2f9)
+![coins news](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/227847fb-a951-4028-9d6d-32df1bbcb23a)
 
 
 ## Coin News Detail
@@ -38,7 +39,6 @@
 
 ## Coin Detail
 
-![coin detail 1](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/82db9254-3fa2-4a9a-acfd-38e904ff5e78)
 
 ![coin detail 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/189024dc-04d2-47a7-bcd8-8fd2b3ed29b8)
 
