@@ -18,12 +18,12 @@
 
 ![favorite](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/85a6a2a5-430a-4a2a-8e44-49f3e5ad266d)
 
-
-![home 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/b094b310-9ff2-4e23-b38d-1f78eb614629)
+![home - 1](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/7e5bafb4-ba12-4bd3-8c04-2059cf64a727)
 
 
 ## Favorites Page
 
+![favoritecoins](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/1aa5dc90-9ef9-4269-982e-222b6e03448a)
 
 
 
