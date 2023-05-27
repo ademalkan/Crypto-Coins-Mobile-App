@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Name should render the name prop correctly 1`] = `
+<Text
+  style={
+    {
+      "fontSize": 16,
+      "fontWeight": "bold",
+      "marginRight": 5,
+    }
+  }
+>
+  Adem ALKAN
+</Text>
+`;

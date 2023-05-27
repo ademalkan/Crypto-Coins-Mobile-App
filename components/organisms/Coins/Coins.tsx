@@ -1,6 +1,6 @@
 import React from 'react'
 import AlertText from '../../atoms/AlertText/AlertText';
-import { VirtualizedList, Text, ScrollView } from 'react-native';
+import { VirtualizedList, Text } from 'react-native';
 import Coin from '../../molecules/Coin/Coin';
 import styles from './Coins.styles'
 import { CoinI } from '../../../interfaces/CoinInterface';

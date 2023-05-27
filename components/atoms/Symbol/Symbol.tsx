@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { Text } from 'react-native';
 import styles from "./Symbol.styles";
 
 type SymbolProps = {

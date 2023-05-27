@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Coins should render the coins component correctly 1`] = `
+[
+  <Text
+    style={
+      {
+        "borderBottomColor": "#f2f2f2",
+        "borderBottomWidth": 1,
+        "fontSize": 18,
+        "fontWeight": "600",
+        "margin": 12,
+        "paddingBottom": 4,
+      }
+    }
+  >
+    Coin List
+  </Text>,
+  <RCTScrollView
+    data={
+      [
+        {
+          "current_price": 50000,
+          "id": "1",
+          "image": "coin.png",
+          "name": "Bitcoin",
+          "price_change_24h": 5,
+          "symbol": "BTC",
+          "total_volume": 1000000,
+        },
+        {
+          "current_price": 3000,
+          "id": "2",
+          "image": "coin.png",
+          "name": "Ethereum",
+          "price_change_24h": -2,
+          "symbol": "ETH",
+          "total_volume": 500000,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    getItemLayout={[Function]}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={true}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    style={
+      {
+        "flex": 1,
+      }
+    }
+    updateCellsBatchingPeriod={10}
+    windowSize={10}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "borderBottomColor": "#f2f2f2",
+              "borderBottomWidth": 1,
+              "flex": 1,
+              "flexDirection": "row",
+              "marginBottom": 10,
+              "padding": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <ViewManagerAdapter_ExpoImage
+              height={70}
+              marginRight={10}
+              onError={[Function]}
+              onLoad={[Function]}
+              onLoadStart={[Function]}
+              onProgress={[Function]}
+              proxiedProperties={
+                {
+                  "contentFit": "cover",
+                  "contentPosition": {
+                    "left": "50%",
+                    "top": "50%",
+                  },
+                  "placeholder": [],
+                  "source": [],
+                  "tintColor": undefined,
+                  "transition": {
+                    "duration": 1000,
+                  },
+                }
+              }
+              style={
+                {
+                  "height": 70,
+                  "marginRight": 10,
+                  "width": 70,
+                }
+              }
+              width={70}
+            />
+          </View>
+          <View>
+            <Text
+              style={
+                {
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "marginRight": 5,
+                }
+              }
+            >
+              Bitcoin
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#666",
+                  "fontSize": 14,
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              BTC
+            </Text>
+            <View
+              style={
+                {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "marginBottom": 4,
+                    "textTransform": "capitalize",
+                  }
+                }
+              >
+                Total Volume:
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginLeft": 4,
+                  }
+                }
+              >
+                $
+                1000000
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "marginBottom": 4,
+                    "textTransform": "capitalize",
+                  }
+                }
+              >
+                Price Change 24 Hours:
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginLeft": 4,
+                  }
+                }
+              >
+                $
+                5
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginTop": 10,
+                  "width": 205,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "backgroundColor": "#383a68",
+                    "borderRadius": 8,
+                    "opacity": 1,
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "white",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Detail
+                </Text>
+              </View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "backgroundColor": "#383a68",
+                    "borderRadius": 8,
+                    "opacity": 1,
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "white",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Add Favorite
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Text
+            style={
+              {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginLeft": "auto",
+              }
+            }
+          >
+            $
+            50000
+          </Text>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            {
+              "borderBottomColor": "#f2f2f2",
+              "borderBottomWidth": 1,
+              "flex": 1,
+              "flexDirection": "row",
+              "marginBottom": 10,
+              "padding": 10,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+          >
+            <ViewManagerAdapter_ExpoImage
+              height={70}
+              marginRight={10}
+              onError={[Function]}
+              onLoad={[Function]}
+              onLoadStart={[Function]}
+              onProgress={[Function]}
+              proxiedProperties={
+                {
+                  "contentFit": "cover",
+                  "contentPosition": {
+                    "left": "50%",
+                    "top": "50%",
+                  },
+                  "placeholder": [],
+                  "source": [],
+                  "tintColor": undefined,
+                  "transition": {
+                    "duration": 1000,
+                  },
+                }
+              }
+              style={
+                {
+                  "height": 70,
+                  "marginRight": 10,
+                  "width": 70,
+                }
+              }
+              width={70}
+            />
+          </View>
+          <View>
+            <Text
+              style={
+                {
+                  "fontSize": 16,
+                  "fontWeight": "bold",
+                  "marginRight": 5,
+                }
+              }
+            >
+              Ethereum
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#666",
+                  "fontSize": 14,
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              ETH
+            </Text>
+            <View
+              style={
+                {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "marginBottom": 4,
+                    "textTransform": "capitalize",
+                  }
+                }
+              >
+                Total Volume:
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginLeft": 4,
+                  }
+                }
+              >
+                $
+                500000
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "display": "flex",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "bold",
+                    "marginBottom": 4,
+                    "textTransform": "capitalize",
+                  }
+                }
+              >
+                Price Change 24 Hours:
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#666",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginLeft": 4,
+                  }
+                }
+              >
+                $
+                -2
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginTop": 10,
+                  "width": 205,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "backgroundColor": "#383a68",
+                    "borderRadius": 8,
+                    "opacity": 1,
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "white",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Detail
+                </Text>
+              </View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "backgroundColor": "#383a68",
+                    "borderRadius": 8,
+                    "opacity": 1,
+                    "paddingHorizontal": 16,
+                    "paddingVertical": 8,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "white",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Add Favorite
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Text
+            style={
+              {
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "marginLeft": "auto",
+              }
+            }
+          >
+            $
+            3000
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>,
+]
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageAtom should render the default image when no image prop is provided 1`] = `
+<Image
+  source="mocked-logo.png"
+  style={
+    {
+      "borderRadius": 8,
+      "marginBottom": 8,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`ImageAtom should render the image prop correctly 1`] = `
+<Image
+  source={
+    {
+      "uri": "https://example.com/image.jpg",
+    }
+  }
+  style={
+    {
+      "borderRadius": 8,
+      "marginBottom": 8,
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`ImageAtom should render the image with custom height when height prop is provided 1`] = `
+<Image
+  source={
+    {
+      "uri": "https://example.com/image.jpg",
+    }
+  }
+  style={
+    {
+      "borderRadius": 8,
+      "height": 200,
+      "marginBottom": 8,
+      "width": "100%",
+    }
+  }
+/>
+`;

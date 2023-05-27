@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SubTitleWithPrice should render the text and price props correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#666",
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "marginBottom": 4,
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    Subtitle Text
+  </Text>
+  <Text
+    style={
+      {
+        "color": "#666",
+        "fontSize": 14,
+        "fontWeight": "500",
+        "marginLeft": 4,
+      }
+    }
+  >
+    $
+    9.99
+  </Text>
+</View>
+`;

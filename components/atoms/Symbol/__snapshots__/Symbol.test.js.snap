@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Symbol should render the symbol prop correctly 1`] = `
+<Text
+  style={
+    {
+      "color": "#666",
+      "fontSize": 14,
+      "textTransform": "uppercase",
+    }
+  }
+>
+  BTC
+</Text>
+`;
