@@ -34,7 +34,7 @@
 
 ## Coin News Detail
 
-![news detail](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/b16bd8cc-9e89-4fa6-9fbd-e2225b72eaea)
+![coins detail new](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/689460c1-7232-47fa-84db-d57d4790b1d3)
 
 
 ## Coin Detail
