@@ -16,14 +16,14 @@
 
 ## Home
 
-![home - 1](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/601dd4fe-4fb9-48c7-ab3e-05a3cf0a31d0)
+![favorite](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/85a6a2a5-430a-4a2a-8e44-49f3e5ad266d)
+
 
 ![home 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/b094b310-9ff2-4e23-b38d-1f78eb614629)
 
 
 ## Favorites Page
 
-![favorite](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/85a6a2a5-430a-4a2a-8e44-49f3e5ad266d)
 
 
 
@@ -43,6 +43,8 @@
 ![coin detail 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/189024dc-04d2-47a7-bcd8-8fd2b3ed29b8)
 
 ![coin detail 3](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/611519d6-222a-4ed9-8d93-5825e7cea3b8)
+
+![coins detail 2](https://github.com/ademalkan/Crypto-Coins-Mobile-App/assets/43451577/a7f290e5-65f3-4836-b6f3-0a96871b763b)
 
 
 ## Run Test
