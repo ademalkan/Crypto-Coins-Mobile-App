@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View } from 'react-native';
 import SearchInput from '../../molecules/SearchInput/SearchInput';
 import { useFavorites } from '../../../context/FavoritesContext';
@@ -13,10 +13,14 @@ export default function FavoriteCoinListTemplates() {
 
   const { favoriteCoins } = useFavorites();
 
+  const memoizedSearchInput = useMemo(() => (
+    <SearchInput handleSearch={handleSearch} searchQuery={searchQuery} />
+  ), [handleSearch, searchQuery]);
+
   return (
     <View>
-      {favoriteCoins[0] && <SearchInput handleSearch={handleSearch} searchQuery={searchQuery} />}
-      <Coins title="" coins={favoriteCoins} emptyText="You have not any added favorite coins yet" searchQuery={searchQuery} />
+      {favoriteCoins[0] && memoizedSearchInput}
+      <Coins title="" coins={favoriteCoins} emptyText="You have not added any favorite coins yet" searchQuery={searchQuery} />
     </View>
   );
 }

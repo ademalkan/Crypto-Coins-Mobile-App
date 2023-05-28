@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
-import styles from './Loader.styles'
+import styles from './Loader.styles';
+
 const Loader: React.FC = () => {
+  const memoizedStyles = useMemo(() => styles, []);
+
   return (
-    <View style={styles.container}>
+    <View style={memoizedStyles.container}>
       <ActivityIndicator size="large" color="#000" />
-      <Text style={styles.text}>Loading...</Text>
+      <Text style={memoizedStyles.text}>Loading...</Text>
     </View>
   );
 };
-
 
 export default Loader;

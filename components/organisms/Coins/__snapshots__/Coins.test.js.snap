@@ -187,8 +187,7 @@ exports[`Coins should render the coins component correctly 1`] = `
                   }
                 }
               >
-                $
-                1000000.00
+                $1000000.00
               </Text>
             </View>
             <View
@@ -222,8 +221,7 @@ exports[`Coins should render the coins component correctly 1`] = `
                   }
                 }
               >
-                $
-                5.00
+                $5.00
               </Text>
             </View>
             <View
@@ -352,8 +350,7 @@ exports[`Coins should render the coins component correctly 1`] = `
               }
             }
           >
-            $
-            50000.00
+            $50000.00
           </Text>
         </View>
       </View>
@@ -479,8 +476,7 @@ exports[`Coins should render the coins component correctly 1`] = `
                   }
                 }
               >
-                $
-                500000.00
+                $500000.00
               </Text>
             </View>
             <View
@@ -514,8 +510,7 @@ exports[`Coins should render the coins component correctly 1`] = `
                   }
                 }
               >
-                $
-                -2.00
+                $-2.00
               </Text>
             </View>
             <View
@@ -644,8 +639,7 @@ exports[`Coins should render the coins component correctly 1`] = `
               }
             }
           >
-            $
-            3000.00
+            $3000.00
           </Text>
         </View>
       </View>

@@ -119,8 +119,7 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
           }
         }
       >
-        $
-        1000000.00
+        $1000000.00
       </Text>
     </View>
     <View
@@ -154,8 +153,7 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
           }
         }
       >
-        $
-        5.00
+        $5.00
       </Text>
     </View>
     <View
@@ -284,8 +282,7 @@ exports[`CoinOrganism should render the coin organism correctly 1`] = `
       }
     }
   >
-    $
-    50000.00
+    $50000.00
   </Text>
 </View>
 `;

@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View } from 'react-native';
 import SearchInput from '../../molecules/SearchInput/SearchInput';
 import { useCoinContext } from '../../../context/CoinContext';
 import { useFavorites } from '../../../context/FavoritesContext';
 import Coins from '../../organisms/Coins/Coins';
-
 
 export default function CoinListTemplates() {
   const { coins } = useCoinContext();
@@ -16,11 +15,26 @@ export default function CoinListTemplates() {
     setSearchQuery(text);
   };
 
+  const memoizedFavoriteCoins = useMemo(() => favoriteCoins, [favoriteCoins]);
+  const memoizedCoins = useMemo(() => coins, [coins]);
+
   return (
     <View>
       <SearchInput handleSearch={handleSearch} searchQuery={searchQuery} />
-      {favoriteCoins[0] && <Coins coins={favoriteCoins} searchQuery={searchQuery} title="Favorite Coins" emptyText="You have not find any favorite coins yet" />}
-      <Coins coins={coins} searchQuery={searchQuery} title="Coins" emptyText="You have not find any coins yet" />
+      {memoizedFavoriteCoins[0] && (
+        <Coins
+          coins={memoizedFavoriteCoins}
+          searchQuery={searchQuery}
+          title="Favorite Coins"
+          emptyText="You have not found any favorite coins yet"
+        />
+      )}
+      <Coins
+        coins={memoizedCoins}
+        searchQuery={searchQuery}
+        title="Coins"
+        emptyText="You have not found any coins yet"
+      />
     </View>
   );
 }

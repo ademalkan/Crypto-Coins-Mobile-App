@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, Text } from 'react-native';
-import styles from './SubTitleWithPrice.styles'
+import styles from './SubTitleWithPrice.styles';
+
 interface SubTitleWithPriceProps {
   text: string;
-  price: number;
+  price?: number;
 }
 
 const SubTitleWithPrice: React.FC<SubTitleWithPriceProps> = ({ text, price }) => {
+  const formattedPrice = useMemo(() => `$${price?.toFixed(2)}`, [price]);
+
   return (
     <View style={styles.container}>
       <Text style={styles.subtitle}>{text}</Text>
-      <Text style={styles.price}>${price?.toFixed(2)}</Text>
+      <Text style={styles.price}>{formattedPrice}</Text>
     </View>
   );
 };

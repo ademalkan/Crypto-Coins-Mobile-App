@@ -43,7 +43,7 @@ const CoinDetailTemplates: React.FC = () => {
     fetchCoins();
   }, [coin]);
 
-  const getCoinNews = (coin: string) => {
+  const getCoinNews = () => {
     const lowercaseCoin = coin.toLowerCase();
     return (
       cryptoNews?.filter(
@@ -54,17 +54,17 @@ const CoinDetailTemplates: React.FC = () => {
     );
   };
 
-  const getPriceChangeData = (): number[] => {
+  const getPriceChangeData = () => {
     return getPriceChangeDataHelper(timeRange, coinDetail);
   };
 
-  const getPriceChangeLabel = (): string[] => {
+  const getPriceChangeLabel = () => {
     return getPriceChangeLabelHelper(timeRange, coinDetail);
   };
 
+  const coinNews = getCoinNews();
   const priceChangeData = getPriceChangeData();
   const priceChangeLabel = getPriceChangeLabel();
-  const coinNews = getCoinNews(coin);
 
   if (!coinDetail) {
     return <Loader />;
@@ -106,7 +106,6 @@ const CoinDetailTemplates: React.FC = () => {
           width={350}
           height={200}
         />
-
 
         <Text style={styles.longText}>{coinDetail.description.en}</Text>
 

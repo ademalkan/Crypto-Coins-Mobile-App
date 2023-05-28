@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { TextInput } from 'react-native';
 import styles from './SearchInput.styles';
 
@@ -9,11 +9,13 @@ interface SearchInputProps {
 
 const SearchInput: React.FC<SearchInputProps> = React.memo(
   ({ handleSearch, searchQuery }) => {
+    const memoizedHandleSearch = useMemo(() => handleSearch, [handleSearch]);
+
     return (
       <TextInput
         style={styles.searchInput}
         placeholder="Search..."
-        onChangeText={handleSearch}
+        onChangeText={memoizedHandleSearch}
         value={searchQuery}
       />
     );

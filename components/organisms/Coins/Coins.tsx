@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useMemo } from 'react';
 import AlertText from '../../atoms/AlertText/AlertText';
 import { VirtualizedList, Text } from 'react-native';
 import Coin from '../../molecules/Coin/Coin';
-import styles from './Coins.styles'
+import styles from './Coins.styles';
 import { CoinI } from '../../../interfaces/CoinInterface';
 
 interface CoinsProps {
@@ -16,29 +16,32 @@ const Coins: React.FC<CoinsProps> = ({ coins, searchQuery, title = "", emptyText
   if (!coins || !coins.length) {
     return (
       <AlertText text={emptyText} />
-    )
+    );
   }
-
 
   const CoinMemoized = React.memo(Coin);
 
-  const renderItem = ({ item }: { item: CoinI }) => (
-    <CoinMemoized
-      name={item.name}
-      symbol={item.symbol.toUpperCase()}
-      price={item.current_price ? item.current_price : item.price}
-      total_volume={item.total_volume}
-      price_change_24h={item.price_change_24h}
-      image={item.image}
-      id={item.id}
-    />
-  );
+  const renderItem = useMemo(() => {
+    return ({ item }: { item: CoinI }) => (
+      <CoinMemoized
+        name={item.name}
+        symbol={item.symbol.toUpperCase()}
+        price={item.current_price ? item.current_price : item.price}
+        total_volume={item.total_volume}
+        price_change_24h={item.price_change_24h}
+        image={item.image}
+        id={item.id}
+      />
+    );
+  }, [CoinMemoized]);
 
-  const filteredCoins = coins.filter(
-    (coin: CoinI | undefined) =>
-      coin?.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      coin?.symbol.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredCoins = useMemo(() => {
+    return coins.filter(
+      (coin: CoinI | undefined) =>
+        coin?.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        coin?.symbol.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  }, [coins, searchQuery]);
 
   const ITEM_HEIGHT = 100;
 
@@ -65,9 +68,8 @@ const Coins: React.FC<CoinsProps> = ({ coins, searchQuery, title = "", emptyText
           })}
         />
       }
-
     </>
-  )
-}
+  );
+};
 
-export default Coins
+export default Coins;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { LineChart } from 'react-native-chart-kit';
 
 interface LineChartProps {
@@ -13,21 +13,26 @@ interface LineChartProps {
 }
 
 const LineChartAtom: React.FC<LineChartProps> = ({ data, width, height }) => {
+  const memoizedChartConfig = useMemo(
+    () => ({
+      backgroundColor: '#ffffff',
+      backgroundGradientFrom: '#ffffff',
+      backgroundGradientTo: '#ffffff',
+      decimalPlaces: 2,
+      color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+      style: {
+        borderRadius: 8,
+      },
+    }),
+    []
+  );
+
   return (
     <LineChart
       data={data}
       width={width}
       height={height}
-      chartConfig={{
-        backgroundColor: '#ffffff',
-        backgroundGradientFrom: '#ffffff',
-        backgroundGradientTo: '#ffffff',
-        decimalPlaces: 2,
-        color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
-        style: {
-          borderRadius: 8,
-        },
-      }}
+      chartConfig={memoizedChartConfig}
       bezier
     />
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext, useMemo } from 'react';
 import { View, ScrollView } from 'react-native';
 import { useRoute, RouteProp } from '@react-navigation/native';
 import Loader from '../../atoms/Loader/Loader';
@@ -28,8 +28,10 @@ const NewsDetailTemplates: React.FC = () => {
     setNewsDetail(foundNews);
   }, [cryptoNews, news_url]);
 
+  const memoizedLoader = useMemo(() => <Loader />, []);
+
   if (!newsDetail) {
-    return <Loader />;
+    return memoizedLoader;
   }
 
   const formattedUpdatedAt = new Date(newsDetail?.updated_at * 1000).toLocaleDateString();
@@ -39,7 +41,7 @@ const NewsDetailTemplates: React.FC = () => {
       <BackButton />
       <ScrollView contentContainerStyle={styles.content}>
         {/* <ImageAtom image={newsDetail.thumb_2x} width={350} height={200} /> */}
-        <ImageAtom image={""} width={350} height={200} />
+        <ImageAtom image={''} width={350} height={200} />
         <Title text={newsDetail?.title} />
         <SubTitle text={newsDetail?.news_site} />
         <SubTitle text={newsDetail?.source} />

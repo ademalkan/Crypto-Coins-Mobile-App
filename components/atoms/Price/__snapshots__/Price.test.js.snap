@@ -10,7 +10,6 @@ exports[`Price should render the price prop correctly 1`] = `
     }
   }
 >
-  $
-  9.99
+  $9.99
 </Text>
 `;
