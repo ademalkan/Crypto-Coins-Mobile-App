@@ -14,7 +14,7 @@
 
 ### Hangi paketleri kullandım ve neden ?
 
-- Expo CLI => Locali üzerinden React Native CLI başlatırken sorun oluştu. Yoğun araştırma yaptım ancak bulduğum çözümler sorunu gideremedi bu yüzden daha fazla zaman kaybetmemek adına Expo CLI ile devam ettim.
+- Expo CLI => Localim üzerinden React Native CLI başlatırken sorun oluştu. Yoğun araştırma yaptım ancak bulduğum çözümler sorunu gideremedi bu yüzden daha fazla zaman kaybetmemek adına Expo CLI ile devam ettim.
 - Storybook => Her componentin storybook'u yazıldı. Bu sayede projede mevcut olan her component tek bir ekran üzerinden takip edilebilecek ve projenin ilerleyen safhalarında ihtiyaç duyulan componentin mevcut olup olmadığı yada nasıl kullanıldığı direkt olarak tespit edilebilecek. Mevcut yazdığım storylere zamanım olmadığından nasıl kullanıldığını içeren bir detay kısmı ekleyemedim.
 - Jest => Testing için Jest paketini kullandım. Bütün componentlerin ve servislerin testlerini yazdım.
 - Typescript => Projeye OOP esnekliği kattım bu sayede gereksiz kod tekrarlarını önledim ve her bileşene bir kural ekledim. Hangi tipte veri gelecek nasıl kullanılabilir vs.
